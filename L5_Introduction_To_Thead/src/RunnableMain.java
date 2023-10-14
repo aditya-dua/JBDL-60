@@ -9,6 +9,7 @@ public class RunnableMain {
 		// Object of the runnable class is then passed on to the thread object
 		Thread runnable1= new Thread(genRunnable,"My Runnable Thread");
 		
+		//runnable1.setDaemon(true);
 		
 		Thread runnable2 = new Thread(genRunnable,"My Runnable Thread - 2");
 		
