@@ -10,9 +10,10 @@ public class RunnableMain {
 		Thread runnable1= new Thread(genRunnable,"My Runnable Thread");
 		
 		
-		//Thread runnable2 = new Thread());
+		Thread runnable2 = new Thread(genRunnable,"My Runnable Thread - 2");
 		
-		//runnable1.start();
+		runnable1.start();
+		runnable2.start();
 		
 		GenerateNumberThread genNumber = new GenerateNumberThread();
 		//genNumber.start();
