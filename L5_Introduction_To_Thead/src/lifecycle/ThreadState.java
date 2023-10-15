@@ -39,6 +39,7 @@ public class ThreadState implements Runnable {
 
 		try {
 			t2.join();
+			
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
