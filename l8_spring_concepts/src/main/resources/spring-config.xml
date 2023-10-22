@@ -1,0 +1,11 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+	
+	<bean id = "greeting" name="helloworld" scope = "prototype" class = "l8_spring_concepts.HelloWorld"></bean>	
+	
+	<bean id = "emp" class = "l8_spring_concepts.Employee"></bean>	
+	<bean id = "manager" class = "l8_spring_concepts.Employee"></bean>	
+	
+</beans>
