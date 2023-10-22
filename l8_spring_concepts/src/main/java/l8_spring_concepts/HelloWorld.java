@@ -9,10 +9,10 @@ public class HelloWorld {
 		return message;
 	}
 
-	public void setMessage(String message) {
+	/*public void setMessage(String message) {
 		System.out.println("Setter is called");
 		this.message = message;
-	}
+	}*/
 
 	public void init() {
 		System.out.println("Init called");
@@ -26,6 +26,12 @@ public class HelloWorld {
 		this.message = message;
 		System.out.println("Bean Contructor called.");
 	}
+	public HelloWorld(int num, String message) {
+		super();
+		this.message = message;
+		System.out.println("Bean Contructor called.");
+	}
+
 
 	public HelloWorld() {
 		this("Test");

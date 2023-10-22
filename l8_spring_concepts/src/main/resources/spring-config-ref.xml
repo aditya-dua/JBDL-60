@@ -1,0 +1,38 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+	<bean id="addressSetter" name="addressSetter"
+		class="l8_spring_concepts.Address">
+
+		<property name="id" value="1"></property>
+		<property name="street" value="Some Street"></property>
+
+		<property name="city" value="Delhi"></property>
+		<property name="state" value="Delhi"></property>
+
+	</bean>
+
+	<bean id="addressCons" name="addressCons"
+		class="l8_spring_concepts.Address">
+
+		<constructor-arg index="0" value="1"></constructor-arg>
+		<constructor-arg index="1" value="Some Street Cons"></constructor-arg>
+		<constructor-arg index="2" value="Delhi Const"></constructor-arg>
+		<constructor-arg index="3" value="Delhi Const"></constructor-arg>
+
+	</bean>
+	
+	<bean id="empSetterRef" class="l8_spring_concepts.Employee">
+		<property name="id" value="1"></property>
+		<property name="address" ref="addressSetter"></property>
+	</bean>
+
+	<bean id="empConstRef" class="l8_spring_concepts.Employee">
+		<constructor-arg index="0" value="1"></constructor-arg>
+		<constructor-arg index="1" value="Employee Name"></constructor-arg>
+		<constructor-arg index="2" ref="addressCons"></constructor-arg>
+	</bean>
+
+</beans>

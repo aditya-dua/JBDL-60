@@ -1,0 +1,39 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+	<bean id="collSetter" name="collSetter"
+		class="l8_spring_concepts.DICollectionsTest">
+
+		<property name="nameList">
+			<list>
+				<value>Aditya</value>
+				<value>John</value>
+				<value>David</value>
+				<value>Rome</value>
+				<value>Risk</value>
+			</list>
+		</property>
+		<property name="countrySet">
+			<set>
+				<value>INDIA</value>
+				<value>USA</value>
+				<value>CANADA</value>
+				<value>PAKISTAN</value>
+				<value>AUSTRALIA</value>
+			</set>
+		</property>
+		<property name="addressMap">
+			<map>
+				<entry key="1" value="1,xxx,Delhi"></entry>
+				<entry key="2" value="2,xxx,Delhi 2"></entry>
+				<entry key="3" value="2,xxx,Delhi 2"></entry>
+				
+			</map>
+		</property>
+
+	</bean>
+
+
+</beans>

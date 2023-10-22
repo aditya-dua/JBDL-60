@@ -18,7 +18,7 @@ public class SpringMain {
 		System.out.println(hw);
 		System.out.println(hw.getMessage());
 
-		hw.setMessage("Helllo JBDL 60");
+		//hw.setMessage("Helllo JBDL 60");
 
 		HelloWorld hw1 = (HelloWorld) context.getBean("greeting");
 		System.out.println(hw1);

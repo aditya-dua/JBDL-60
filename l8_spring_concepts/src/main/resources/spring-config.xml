@@ -6,9 +6,18 @@
 	<bean id = "greeting" name="helloworld" class = "l8_spring_concepts.HelloWorld" init-method="init" destroy-method="destroy">
 		<property name="message" value="Hello from Props"></property>
 	</bean>	
-	<bean id = "greetingProto" name="helloworld1" scope = "prototype" class = "l8_spring_concepts.HelloWorld"></bean>	
+	<bean id = "greetingProto" name="helloworld1" scope = "prototype" class = "l8_spring_concepts.HelloWorld">
+		<constructor-arg type = "int" value="100"></constructor-arg>
+		<constructor-arg type = "java.lang.String" value="Hello Spring"></constructor-arg>
+	</bean>	
 	
-	<bean id = "emp" class = "l8_spring_concepts.Employee"></bean>	
-	<bean id = "manager" class = "l8_spring_concepts.Employee"></bean>	
+	<bean id = "emp" class = "l8_spring_concepts.Employee">
+			<constructor-arg value="100"></constructor-arg>
+	
+	</bean>	
+	<bean id = "manager" class = "l8_spring_concepts.Employee">
+		<property name="id" value="1"></property>
+		<property name="name" value="Dummy Name"></property>
+	</bean>	
 	
 </beans>
