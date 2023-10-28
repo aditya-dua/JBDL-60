@@ -1,0 +1,22 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>org.geeksforgeeks.jbdl60</groupId>
+	<artifactId>l9_jdbc_maven</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>L9_jdbc_maven</name>
+	<description>L9_jdbc_maven</description>
+
+	<dependencies>
+		<!-- https://mvnrepository.com/artifact/com.mysql/mysql-connector-j -->
+		<dependency>
+			<groupId>com.mysql</groupId>
+			<artifactId>mysql-connector-j</artifactId>
+			<version>8.2.0</version>
+		</dependency>
+
+
+	</dependencies>
+
+</project>
