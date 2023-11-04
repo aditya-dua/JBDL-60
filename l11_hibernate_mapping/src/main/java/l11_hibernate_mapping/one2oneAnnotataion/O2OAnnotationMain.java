@@ -26,6 +26,7 @@ public class O2OAnnotationMain {
 		cx.setAddress("Delhi");
 		cx.setEmail("aditya@aditya.com");
 		
+		
 		ctx.setCustomer(cx);
 		cx.setTransaction(ctx);
 		

@@ -13,9 +13,8 @@
 		<property name="hbm2ddl.auto">create</property>
 		<property name="hibernate.show_sql">true</property>
 		
-		
-		<mapping resource="customer.hbm.xml"></mapping>
-		<mapping resource="transaction.hbm.xml"></mapping>
+		<mapping resource="cart.hbm.xml"></mapping>
+		<mapping resource="item.hbm.xml"></mapping>
 	</session-factory>
 	
 	
