@@ -37,7 +37,7 @@ public class M2MMain {
 		itemsSet.add(i2);
 		cart.setItems(itemsSet);
 		cart.setTotal(100*2+50*5);
-		
+		//
 		
 		
 		Set<Items> itemsSet2 = new HashSet<Items>();
