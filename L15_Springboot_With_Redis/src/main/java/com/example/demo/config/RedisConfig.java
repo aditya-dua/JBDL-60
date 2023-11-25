@@ -13,7 +13,13 @@ public class RedisConfig {
 
 	@Bean
 	public JedisConnectionFactory connectionFactory() {
-		RedisStandaloneConfiguration config = new RedisStandaloneConfiguration("localhost", 6379);
+		//RedisStandaloneConfiguration config = new RedisStandaloneConfiguration("localhost", 6379);
+		RedisStandaloneConfiguration config = new RedisStandaloneConfiguration();
+		
+		config.setHostName("redis-11372.c305.ap-south-1-1.ec2.cloud.redislabs.com");
+		config.setPassword("XqbradhamVP12lGlyQ0P4Vn76O3d2aC4");
+		config.setPort(11372);
+		config.setUsername("default");
 		
 		return new JedisConnectionFactory(config);
 	}

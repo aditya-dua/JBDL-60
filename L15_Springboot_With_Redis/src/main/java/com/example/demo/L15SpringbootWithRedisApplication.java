@@ -38,5 +38,11 @@ public class L15SpringbootWithRedisApplication {
 	public Product save(@RequestBody Product product){
 		return dao.save(product);
 	}
+	/**
+	 * Other functions including
+	 * 1. Fetch product on the basis of ID
+	 * 2. Delete a Product
+	 * 3. Update Product
+	 */
 
 }
