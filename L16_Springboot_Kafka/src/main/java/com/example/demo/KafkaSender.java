@@ -8,7 +8,6 @@ import org.springframework.stereotype.Service;
  * 
  * Linux/Mac: ./bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic greet_wrols --from-beginning
  * Windows: .\bin\windows\kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic hello_world --from-beginning
-
  */
 
 @Service
