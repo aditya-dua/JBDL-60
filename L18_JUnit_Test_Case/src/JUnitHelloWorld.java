@@ -1,36 +1,45 @@
-import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import static org.junit.Assert.assertEquals;
 
 import org.junit.Before;
 import org.junit.BeforeClass;
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
-class JUnitHelloWorld {
+
+public class JUnitHelloWorld {
 
 	Calc c;
 	
 	@BeforeClass
-	public void setupBefore() {
-		c = new Calc();
-		System.out.println("@BeforeClass function called");
+	public static void setupBefore() {
+		
+		System.out.println("@BeforeClass Called");
 	}
 	
 	@Before
 	public void setup() {
-		//c = new Calc();
-		System.out.println("setup function called");
+		// you can pull out value of the object.
+		c = new Calc();
+		System.out.println("Before Called");
+	}
+	
+	
+	@Test
+	public void messgae() {
+		String msg = "Hello World!";
+		
+		assertEquals("Hello World!", msg);
+		System.out.println("messgae Called");
 	}
 	
 	@Test
-	void test() {
+	public void CalcAddTest() throws Exception {
 		
-		assertEquals(20, c.add(10, 10));
-		//fail("Not yet implemented");
-	}
-	
-	@Test
-	public void greetMessage() {
+		int sum = c.add(10, 20);
+		//throw new Exception("some Exception");
+		assertEquals(30, sum);
+		System.out.println("CalcAddTest Called");
 		
-		assertEquals("Hello Aditya", c.greetMessage("Aditya"));
 	}
 
 }

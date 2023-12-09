@@ -14,6 +14,7 @@ public class KafkaListener {
 		System.out.println("Key Name:"+payload.key());
 		System.out.println("Value:"+payload.value());
 		System.out.println("Payload"+payload.toString());
+		// Send the email message over here
 	}
 	
 }
