@@ -14,6 +14,7 @@ public class WebController {
 	
 	@GetMapping(value="/kafka")
 	public String producer(@RequestParam String message) {
+		
 		kafkaSender.send(message);
 		return "Message send to kafka topic: "+kafkaSender.kafkaTopic+" message:"+message;
 	}

@@ -20,6 +20,7 @@ public class KafkaSender {
 	
 	public void send(String message) {
 		kafkaTemplate.send(kafkaTopic,message);
+		kafkaTemplate.send(kafkaTopic, "KEY", message);
 	}
 
 }
