@@ -18,12 +18,12 @@ public class L19SpringSecurityApplication {
 		return "Test API works";
 	}
 	
-	@GetMapping("/user/test")
+	@GetMapping("/user")
 	public String userTest() {
 		return "User Test API works";
 	}
 	
-	@GetMapping("/home/test")
+	@GetMapping("/home")
 	public String homeTest() {
 		return "Home Test API works";
 	}

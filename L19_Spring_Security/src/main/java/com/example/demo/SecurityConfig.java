@@ -24,13 +24,13 @@ public class SecurityConfig {
 		
 	}
 	
-	
+	@Bean
 	public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
-		http.authorizeRequests()
+		http.authorizeHttpRequests()
 		.requestMatchers("/user").authenticated()
-		.requestMatchers("/home").permitAll();
+		.requestMatchers("/home").permitAll().and().formLogin().and().httpBasic();
 		
-		return http.csrf().disable().build();
+		return http.build();
 	
 	}
 }
