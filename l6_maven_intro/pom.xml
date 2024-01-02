@@ -5,4 +5,13 @@
   <version>0.0.1-SNAPSHOT</version>
   <name>L6_Maven_Introduction</name>
   <description>L6_Maven_Introduction</description>
+  
+  <dependencies>
+	  <dependency>
+		<groupId>org.projectlombok</groupId>
+		<artifactId>lombok</artifactId>
+		<version>1.18.30</version>
+		<scope>provided</scope>
+	</dependency>
+  </dependencies>
 </project>
